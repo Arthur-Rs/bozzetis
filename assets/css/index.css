@@ -1,0 +1,198 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/background-home.png") bottom;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.home img {
+  height: 32%;
+}
+
+.home h1 {
+  color: var(--color-text);
+  margin-top: 20vh;
+  font-size: 4.8vh;
+  font-weight: normal;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background: var(--color-background-page);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: row;
+}
+
+.about > * {
+  margin-top: -15vh;
+}
+
+.about img {
+  height: 80%;
+}
+
+.about div {
+  padding: 50px;
+}
+
+.about p {
+  color: var(--color-text);
+  font-size: 5.1vh;
+  padding-bottom: 8%;
+}
+
+.about h2 {
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: 6vh;
+}
+
+.services {
+  width: 100%;
+  background: var(--color-background-page);
+
+  margin-top: -15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.services .column {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.services div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services img {
+  width: 68%;
+}
+
+.services strong {
+  color: var(--color-text);
+  font-size: 3.2vh;
+}
+
+.more {
+  background: linear-gradient(
+    180deg,
+    rgba(41, 47, 99, 1) 40%,
+    rgba(241, 241, 241, 0.16) 60%,
+    rgba(241, 241, 241, 0.3) 73%,
+    rgba(241, 241, 241, 0.45) 80%,
+    rgba(241, 241, 241, 0.65) 90%,
+    rgba(241, 241, 241, 1) 100%
+  );
+  background-color: var(--color-background-page);
+  height: 60vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.more h3 {
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: 6vh;
+}
+
+.more a {
+  background: linear-gradient(90deg, #4c55a8, var(--color-background));
+  width: 20%;
+  height: 20%;
+  display: flex;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 4vh;
+  margin-top: 8vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 4vh;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background: #f1f1f1;
+  padding: 4%;
+}
+
+.contact h2 {
+  color: #4c55a8;
+  font-size: 200%;
+}
+
+.contact strong {
+  color: #212121;
+  font-size: 120%;
+}
+
+@media (max-width: 768px) {
+  .home img {
+    height: 20%;
+  }
+
+  .home h1 {
+    margin-top: 20vh;
+    font-size: 150%;
+    text-align: center;
+  }
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about p {
+    color: var(--color-text);
+    font-size: 3.1vh;
+    text-align: center;
+  }
+
+  .about h2 {
+    font-size: 3.8vh;
+    text-align: center;
+  }
+  .about img {
+    height: 45%;
+  }
+
+  .services {
+    margin-top: -2vh;
+  }
+  .services .column {
+    flex-direction: column;
+  }
+
+  .more h3 {
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .more a {
+    width: 62%;
+    height: 20%;
+    font-size: 4vh;
+    margin-top: 12vh;
+  }
+}

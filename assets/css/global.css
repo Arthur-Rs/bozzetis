@@ -1,0 +1,45 @@
+@import url("../components/header.css");
+@import url("./index.css");
+
+:root {
+  --color-primary: #1e254d;
+  --color-background: #1e254d;
+  --color-background-light: #2a3166;
+  --color-background-page: #292f63;
+
+  --color-text: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  *:hover {
+    opacity: 1;
+  }
+}
