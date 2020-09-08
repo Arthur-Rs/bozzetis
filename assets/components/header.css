@@ -100,6 +100,10 @@
     width: 0 !important;
   }
 
+  .hide .header-nav{
+    margin-top: 12vh !important;
+  }
+
   .socials .iconify {
     color: white;
     height: 5vh;
@@ -125,12 +129,12 @@
   .header-nav {
     position: fixed;
     background-color: var(--color-background);
-    margin-top: 12vh;
+    margin-top: 16vh;
     height: 88vh;
     width: 60vw;
     top: 0;
+    transition: 0.4s;
     left: -60vw;
-    transition: left 0.4s;
 
     display: flex;
     flex-direction: column;
