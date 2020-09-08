@@ -64,9 +64,10 @@
   }
 
   .header {
+    transition: 0.4s;
     position: fixed;
     width: 100%;
-    height: 12vh;
+    height: 16vh;
     justify-self: center;
   }
 
@@ -79,6 +80,33 @@
     height: 5.5vh;
     width: 5.5vh;
     margin-left: 15px;
+  } 
+
+  .socials{
+    height: 80%;
+    transition: 0.4s;
+  }
+
+  .hide{
+    height: 12vh !important;
+  }
+
+  .hide  .socials{
+    height: 0;
+  }
+
+  .hide .socials .iconify {
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  .socials .iconify {
+    color: white;
+    height: 5vh;
+    width: 5vh;
+    margin-right: 1vw;
+    transition: 0.4s;
+    cursor: pointer;
   }
 
   .header .content ul {
