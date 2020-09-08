@@ -1,0 +1,80 @@
+@import url('../assets/components/dark-header.css');
+
+main{
+  background: var(--color-background-page) url('../assets/img/background-purpple.png') bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+*{
+  color: var(--color-text)
+}
+
+h1{
+  font-size: 320%;
+  position: relative;
+  line-height: 175%;
+}
+
+strong{
+  font-size: 145%;
+  line-height: 190%;
+}
+
+p{
+  max-width: 85%;
+  font-size: 130%;
+  margin-bottom: 2%;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  padding: 5%;
+}
+
+section img{
+  width:  45%;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  section{
+    flex-direction: column-reverse;
+  }
+
+  section img{
+    width:  85%;
+    margin-top: 15%;
+  }
+
+  footer img{
+    width: 75%;
+  }
+
+  *{
+   text-align: center;
+  }
+
+  h1{
+    font-size: 270%;
+    position: relative;
+    line-height: 175%;
+  }
+  
+  strong{
+    font-size: 135%;
+    line-height: 250%;
+  }
+
+  p{
+    max-width: 100%;
+    font-size: 115%;
+  }
+}
