@@ -42,7 +42,7 @@
 
 .about p {
   color: var(--color-text);
-  font-size: 5.1vh;
+  font-size: 3.5Vh;
   padding-bottom: 8%;
 }
 
@@ -84,6 +84,7 @@
 .services strong {
   color: var(--color-text);
   font-size: 3.2vh;
+  text-align: center;
 }
 
 .more {
