@@ -1,5 +1,4 @@
-@import url('../assets/components/dark-header.css');
-
+@import url('../assets/components/header/dark-header.css');
 main{
   display: flex;
   flex-direction: column;
@@ -69,11 +68,28 @@ footer{
     flex-direction: column-reverse;
   }
 
+  .events{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .column strong{
+    min-width: 100%;
+  }
+  .column{
+    width: 100% ;
+  }
+
+  .event{
+    width: 100%;
+  }
+
   h1{
     text-align: center;
     font-size: 270%;
     position: relative;
     max-width: 100%;
+    margin-bottom: 6vh;
   }
 
   h1::after{
