@@ -40,9 +40,17 @@ p{
   width: 75%;
 }
 
+.strong{
+  font-weight: bold;
+}
+
 .services strong{
   font-size: 200%;
-  line-height: 280%;
+  line-height: 100%; 
+  margin-bottom: 5%;
+  margin-left: 0;
+  max-width: 90%;
+
 }
 
 .italic{
@@ -70,6 +78,7 @@ p{
   align-self: flex-end;
 }
 
+.left-service div,
 .right-service div{
   display: flex;
   flex-direction: column;
